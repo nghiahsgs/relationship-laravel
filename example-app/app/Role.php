@@ -10,6 +10,6 @@ class Role extends Model
         'name'
     ];
     public function authors(){
-        return $this->belongsToMany("App\Author");
+        return $this->belongsToMany("App\Author",'author_role');
     }
 }

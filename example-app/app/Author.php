@@ -17,6 +17,6 @@ class Author extends Model
         return $this->hasMany('App\Book','author_id');
     }
     public function roles(){
-        return $this->belongsToMany("App\Role");
+        return $this->belongsToMany("App\Role",'author_role');
     }
 }
